@@ -63,19 +63,19 @@ function initDT() {
   // Create ordered Object with column name and mapped display name
   window.columnNamesMap = [
     // [ 'Repository', 'full_name' ],
-    ['Link', 'repoLink'], // custom key
-    ['Owner', 'ownerName'], // custom key
-    ['Name', 'name'],
+    ['Enlace', 'repoLink'], // custom key
+    ['Propietario', 'ownerName'], // custom key
+    ['Nombre', 'name'],
     ['Branch', 'default_branch'],
-    ['Stars', 'stargazers_count'],
+    ['Estrellas', 'stargazers_count'],
     ['Forks', 'forks'],
-    ['Open Issues', 'open_issues_count'],
-    ['Size', 'size'],
-    ['Last Push', 'pushed_at'],
+    ['Problemas abiertos', 'open_issues_count'],
+    ['Tamaño', 'size'],
+    ['Ultima subida', 'pushed_at'],
   ];
 
-  // Sort by stars:
-  const sortColName = 'Stars';
+  // Ordenar por Estrellas:
+  const sortColName = 'Estrellas';
   const sortColumnIdx = window.columnNamesMap
     .map(pair => pair[0])
     .indexOf(sortColName);
